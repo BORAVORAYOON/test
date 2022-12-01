@@ -1,6 +1,11 @@
 @import url(./normalize.css);
 @import url(./reset.css);
 
+/* 기본 스타일 */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 /* 본문 스타일 */
 body {
   background: rgb(255, 255, 180);
@@ -10,7 +15,6 @@ body {
 /* 레이아웃 */
 .header, .visual, .main, .slogan, .footer-inner {
   width: 940px;
-  box-sizing: border-box;
   margin: 0 auto;
 }
 
@@ -31,6 +35,28 @@ body {
 .main {
   background: PaleGreen;
   height: 50vh;
+  display: flow-root;
+  padding: 0 15px;
+  /* overflow: hidden; */
+  /* Block Formatting Context */
+}
+
+.group {
+  margin: 0 15px;
+  float: left;
+}
+
+.group1 {
+  background-color: #BF9BDE;
+  width: 250px;
+}
+.group2 {
+  background-color: #FFAA4D;
+  width: 300px;
+}
+.group3 {
+  background-color: #EB6FBD;
+  width: 100px;
 }
 
 /* 슬로건 */
