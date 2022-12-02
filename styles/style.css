@@ -35,15 +35,8 @@ body {
 .main {
   background: PaleGreen;
   height: 50vh;
-  display: flow-root;
-  padding: 0 15px;
-  /* overflow: hidden; */
-  /* Block Formatting Context */
-}
-
-.group {
-  margin: 0 15px;
-  float: left;
+  display : flex;
+  flex-direction: row;
 }
 
 .group1 {
