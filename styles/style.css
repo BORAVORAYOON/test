@@ -89,7 +89,7 @@ body {
 
 /* 메인 메뉴 */
 .navigation {
-  padding-bottom: 80px;
+  padding-bottom: 40px;
 }
 
 .menu {
@@ -118,7 +118,6 @@ body {
   border-left: 2px solid #fff;
 }
 
-/* 구체성 > 10점 */
 .menu-button {
   border: 0;
   background: transparent;
@@ -130,7 +129,6 @@ body {
   text-shadow: 1px 1px 0 #000, -1px -1px 0 #000;
 }
 
-/* 구체성 > 20점 */
 .is-active .menu-button {
   color: #ff0;
 }
@@ -142,9 +140,9 @@ body {
 }
 
 .sub-menu {
-  background-color: pink;
-  width: auto;
   position: absolute;
+  top: 47px;
+  padding: 4px 0;
   display: none;
 }
 
@@ -183,6 +181,15 @@ body {
 
 .sub-menu a:hover::before, .sub-menu a:focus::before {
   content: "\e801";
+}
+
+.sub-menu a {
+  display: inline-block;
+  padding: 6px 0;
+}
+
+.sub-menu a:hover, .sub-menu a:focus {
+  color: #f00;
 }
 
 .sub-menu li {
