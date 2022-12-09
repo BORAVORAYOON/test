@@ -3,7 +3,7 @@
 @import url(./fontello.css);
 
 /* 숨김 콘텐츠 */
-.a11y-hidden {
+.a11y-hidden, legend {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -254,10 +254,11 @@ body {
 
 /* 메인 */
 .main {
-  background: PaleGreen;
-  height: 50vh;
+  background: #fff;
+  min-height: 450px;
   display: flow-root;
-  padding: 0 15px;
+  padding: 30px 15px;
+  border-radius: 15px 15px 0 0;
   /* overflow: hidden; */
   /* Block Formatting Context */
 }
@@ -267,10 +268,72 @@ body {
   float: left;
 }
 
-.group1 {
-  background-color: #BF9BDE;
-  width: 250px;
+/* 로그인 */
+.login {
+  box-shadow: 5px 5px 0 0 #ccc;
+  background: linear-gradient(to right,#e85e2c,#ef9126);
+  border-radius: 5px;
+  padding: 10px;
 }
+
+.login-title {
+  color: yellow;
+  font-weight: 700;
+  text-indent: 10px;
+  font-size: 15px;
+}
+
+.login-form {
+  background-color: #fff;
+  margin-top: 10px;
+  border-radius: 5px 5px 0 0;
+  display: flex;
+  padding: 10px 10px 0 10px;
+}
+
+.login-form fieldset {
+  position: relative;
+  width: 210px;
+  border-bottom: 1px solid #ccc;
+}
+
+.login-form label {
+  display: inline-block;
+  width: 4em;
+}
+
+.login-form input {
+  width: 90px;
+  height: 24px;
+  padding: 0 5px;
+  border: 1px solid #aaa;
+}
+
+fieldset .user-pw {
+  margin-top: 5px;
+  padding-bottom: 10px;
+}
+
+.login-button {
+  display: inline-block;
+  color: #fff;
+  position: absolute;
+  height: 50px;
+  background-color: #e85e2c;
+  border: none;
+  border-radius: 3px;
+  right: 0;
+  top: 0;
+}
+
+.sign {
+  background-color: #fff;
+  border-radius: 0 0 5px 5px;
+  padding:10px;
+  display: flex;
+  justify-content: space-between;
+}
+
 
 .group2 {
   background-color: #FFAA4D;
