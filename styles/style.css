@@ -343,6 +343,7 @@ body {
   font-size: 12px;
 }
 
+/* 주석 부분은 sign 가로 정렬의 여러 가지 방법 */
 .sign {
   background-color: #fff;
   border-radius: 0 0 5px 5px;
@@ -350,8 +351,31 @@ body {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  /* display: block; */
+  /* font-size: 0; */
+  /* display: flow-root; */
 }
+
+/* .sign li:first-child {
+  float: left;
+}
+
+.sign li:last-child {
+  float: right;
+} */
+
+/* .sign li {
+  font-size: 14px;
+  display: inline-block;
+}
+
+.sign li:first-child {
+  width: 40%;
+}
+.sign li:last-child {
+  width: 60%;
+  text-align: right;
+} */
+
 
 .sign a {
   display: block;
@@ -365,6 +389,28 @@ body {
   color: #e85e2c;
   margin-right: 8px;
 }
+
+/* 유효성 검사 배너 */
+.validation-list {
+  margin-top: 25px;
+}
+
+.validation-list li {
+  margin-top: 10px;
+}
+
+.validation-list a {
+  display: block;
+  border: 1px solid #aaa;
+  border-radius: 30px;
+  padding: 10px 15px 10px 45px;
+  background: url(./images/validation_icon.png) no-repeat 20px 50%,#ccc linear-gradient(to bottom, #ccc, #eee);
+}
+
+.validation-list a:hover, .validation-list a:focus {
+  color: #f00;
+}
+
 
 /* 슬로건 */
 .slogan {
