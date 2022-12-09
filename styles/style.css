@@ -268,6 +268,20 @@ body {
   float: left;
 }
 
+.group1 {
+  width: 250px;
+}
+
+.group2 {
+  background-color: #FFAA4D;
+  width: 380px;
+}
+
+.group3 {
+  background-color: #EB6FBD;
+  width: 190px;
+}
+
 /* 로그인 */
 .login {
   box-shadow: 5px 5px 0 0 #ccc;
@@ -294,7 +308,12 @@ body {
 .login-form fieldset {
   position: relative;
   width: 210px;
+  padding-bottom: 5px;
   border-bottom: 1px solid #ccc;
+}
+
+.user-email, .user-pw {
+  padding-bottom: 5px;
 }
 
 .login-form label {
@@ -305,44 +324,46 @@ body {
 .login-form input {
   width: 90px;
   height: 24px;
-  padding: 0 5px;
+  padding: 1px 1px 1px 5px;
   border: 1px solid #aaa;
-}
-
-fieldset .user-pw {
-  margin-top: 5px;
-  padding-bottom: 10px;
+  border-radius: 3px;
 }
 
 .login-button {
   display: inline-block;
-  color: #fff;
   position: absolute;
-  height: 50px;
-  background-color: #e85e2c;
-  border: none;
-  border-radius: 3px;
   right: 0;
   top: 0;
+  height: 53px;
+  background-color: #e85e2c;
+  color: #fff;
+  border: 0;
+  padding: 0 9px;
+  border-radius: 3px;
+  font-size: 12px;
 }
 
 .sign {
   background-color: #fff;
   border-radius: 0 0 5px 5px;
-  padding:10px;
+  padding: 4px 10px;
   display: flex;
+  flex-flow: row nowrap;
   justify-content: space-between;
+  /* display: block; */
 }
 
-
-.group2 {
-  background-color: #FFAA4D;
-  width: 380px;
+.sign a {
+  display: block;
+  padding: 6px 0;
+  letter-spacing: -1px;
 }
 
-.group3 {
-  background-color: #EB6FBD;
-  width: 190px;
+.sign a::before {
+  font-family: fontello;
+  content: "\e803";
+  color: #e85e2c;
+  margin-right: 8px;
 }
 
 /* 슬로건 */
