@@ -475,7 +475,6 @@ body {
 }
 
 .form-group {
-  background-color: pink;
   flex-grow: 1;
   display: flex;
   flex-flow: row nowrap;
@@ -484,8 +483,9 @@ body {
 }
 
 .search-form-inner label {
-  white-space: nowrap;
+  /* white-space: nowrap; */
   margin-right: 10px;
+  flex-shrink: 0;
 }
 
 .search-form-inner input {
@@ -494,12 +494,13 @@ body {
   border-radius: 3px;
   height: 24px;
   padding: 1px 1px 1px 5px;
-  /* min-width: 0;
-  max-width: 100%; */
+  min-width: 0;
+  width: 100%;
 }
 
 .search-button {
-  white-space: nowrap;
+  /* white-space: nowrap; */
+  flex-shrink: 0;
   background-color: #212121;
   color: #fff;
   line-height: 24px;
