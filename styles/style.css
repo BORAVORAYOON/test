@@ -510,6 +510,64 @@ body {
   font-size: 1.3rem;
 }
 
+/* 공지사항 및 자료실 */
+.board {
+  margin-top: 20px;
+  position: relative;
+}
+
+.tab-list {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.tab {
+  border: 1px solid #aaa;
+  border-radius: 5px 5px 0 0;
+  color: #666;
+  background-color: #ccc;
+  padding: 5px 10px;
+}
+
+.is-select.tab {
+  border-color: currentColor currentColor #fff currentColor;
+  color: #e85e2c;
+  background-color: #fff;
+}
+
+.tab-panel {
+  display: none;
+}
+
+.is-select.tab-panel {
+  display: block;
+}
+
+.board-list li {
+  margin-top: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.board-list a {
+  flex-grow: 1;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.board-more {
+  position: absolute;
+  right: -8px;
+  top: -8px;
+  padding: 8px;
+}
+
+.icon-plus::before {
+  color: hsla(110, 50%, 30%, 1);
+}
+
 /* 슬로건 */
 .slogan {
   background: LightCoral;
