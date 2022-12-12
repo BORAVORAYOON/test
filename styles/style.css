@@ -404,6 +404,8 @@ body {
   border: 1px solid #aaa;
   border-radius: 30px;
   padding: 10px 15px 10px 45px;
+  /* padding: 0 15px 0 45px;
+  line-height: 40px; */
   background: url(./images/validation_icon.png) no-repeat 20px 50%,#ccc linear-gradient(to bottom, #ccc, #eee);
 }
 
