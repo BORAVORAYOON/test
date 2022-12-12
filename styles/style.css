@@ -433,11 +433,14 @@ body {
   display: flow-root;
 }
 
-.term-list-subject {
-  background-color: green;
+.term-list-subject, .term-list-brief {
   float: right;
-  color: #296897;
   width: 145px;
+}
+
+.term-list-subject {
+  color: #296897;
+  font-weight: 500;
 }
 .term-list-thumbnail {
   background-color: skyblue;
@@ -449,10 +452,16 @@ body {
 }
 
 .term-list-brief {
-  background-color: rgb(137, 92, 175);
-  float: right;
-  width: 145px;
   margin-top: 5px;
+  line-height: 1.5;
+}
+
+.cross .term-list-subject, .cross .term-list-brief {
+  float: left;
+}
+
+.cross .term-list-thumbnail {
+  float: right;
 }
 
 /* 슬로건 */
