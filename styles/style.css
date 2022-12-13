@@ -638,6 +638,7 @@ body {
   background: #ccc linear-gradient(to bottom, #ccc, #eee);
   border: 1px solid #aaa;
   border-radius: 5px;
+  padding: 10px;
 }
 
 .accent-color {
@@ -647,6 +648,102 @@ body {
 .text-xl {
   font-size: 1.5rem;
   font-weight: 700;
+}
+
+.event {
+  border-bottom:  1px solid #aaa;
+  /* position: relative; */
+  /* display: flow-root; */
+}
+
+.event-title {
+  display: inline-block;
+}
+
+.event-button-wrapper {
+  /* font-size: 0; */ /* font-size:0은 스크린리더가가 못 읽음 */
+  overflow: hidden;
+  height: 20px;
+  /* position: absolute;
+  right: 0;
+  top: 0; */
+  /* display:flex로 갭 없애는 방법 */
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  /* 이 갭은 버튼 사이의 갭, IE는 못 읽음 */
+  gap: 5px;
+  float: right;
+}
+
+/* IR 기법 > Image Replacement */
+.event-button {
+  width: 19px;
+  height: 18px;
+  border: 0;
+  padding: 18px 0 0 0;
+  background: url("./images/back_forward.png") no-repeat;
+}
+
+.event-button:focus {
+  outline-offset: -2px;
+}
+
+.event-button-prev {
+  /* margin-right: 5px; */
+}
+
+.event-button-next {
+  background-position: -36px 0;
+}
+
+.event-thumbnail, .event-brief {
+  margin: 10px 0;
+}
+
+.event-thumbnail img {
+  border: 1px solid #aaa;
+  box-shadow: 5px 5px 0 0 #ccc;
+}
+
+.event-brief{
+  line-height: 1.5;
+}
+
+.related {
+  margin-top: 10px;
+}
+
+.related-list {
+  margin-top: 10px;
+  background-color: #fff;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  margin-top: 10px;
+  height: 27px;
+  overflow: hidden;
+  transition: height 400ms 0ms, padding-top 400ms 400ms;
+}
+
+.related-list li {
+  /* line-height: 27px;
+  margin-left: 20px; */
+  height: 25px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: 0 5px;
+}
+
+.related-list li a {
+  flex-grow: 1;
+  padding: 0 10px;
+}
+
+.related-list:hover, .related-list:focus {
+  height: 147px;
+  padding-top: 10px;
+  
 }
 
 /* 슬로건 */
