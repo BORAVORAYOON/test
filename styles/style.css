@@ -584,11 +584,10 @@ body {
   background: #aaa linear-gradient(to right, #ccc, #fff);  
 }
 
-.news-title {
-  color: #e85e2c;
+/* .news-title {
   font-size: 1.5rem;
   font-weight: 700;
-}
+} */
 
 .news-link {
   display: block;
@@ -632,6 +631,22 @@ body {
   top: -8px;
   right: -8px;
   padding: 8px;
+}
+
+/* 신규이벤트 및 관련 사이트 */
+.gradient-effect {
+  background: #ccc linear-gradient(to bottom, #ccc, #eee);
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+.accent-color {
+  color: #e85e2c;
+}
+
+.text-xl {
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 /* 슬로건 */
