@@ -778,7 +778,6 @@ body {
 }
 
 .favorite-list {
-  background-color: yellow;
   list-style-type: none;
   /* counter-reset: number 0; */
 }
@@ -792,7 +791,6 @@ body {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center; */
-  background-color: lightcoral;
 }
 
 .favorite-list li a {
@@ -821,7 +819,7 @@ body {
   height: 11px;
   margin-top: -6px;
   margin-left: auto;
-  background: #fff url(./images/rank.png) no-repeat 100% 0;
+  background: url(./images/rank.png) no-repeat 100% 0;
   right: 0;
   top: 50%;
 }
