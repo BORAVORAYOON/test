@@ -67,17 +67,20 @@ body {
 
 /* 비주얼 */
 .visual {
-
+  height: 120px;
 }
 
 /* 메인 */
 .main {
   min-height: 450px;
-  display : flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 30px;
+  display : flow-root;
+  background-color: #fff;
+  padding: 30px 15px;
+}
+
+.group {
+  float: left;
+  margin: 0 15px;
 }
 
 .group1 {
@@ -113,7 +116,7 @@ body {
 
 .event {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-between;
   border-bottom: 1px solid #aaa;
 }
@@ -130,7 +133,7 @@ body {
   height: 18px;
   border: 0;
   padding: 0;
-  background: aqua url(./images/back_forward.png) no-repeat;
+  background: url(./images/back_forward.png) no-repeat;
 }
 
 .event-button-next {
@@ -144,6 +147,10 @@ body {
 .event-thumbnail img {
   border: 1px solid #aaa;
   box-shadow: 5px 5px 0 0 #ccc;
+}
+
+.related {
+  margin-top: 10px;
 }
 
 /* 인기사이트 */
