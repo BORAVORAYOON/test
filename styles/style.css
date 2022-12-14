@@ -786,17 +786,17 @@ body {
 .favorite-list li {
   margin-top: 10px;
   counter-increment: number;
-  /* position: relative;
-  line-height: 1.5; */
-  display: flex;
+  position: relative;
+  /* line-height: 1.5; */
+  /* display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; */
   background-color: lightcoral;
 }
 
 .favorite-list li a {
-  /* font-size: 16px; */
+  /* font-size: 24px; */
 }
 
 .favorite-list li::before {
@@ -814,13 +814,16 @@ body {
 }
 
 .up, .stop, .down {
-  /* position: absolute; */
+  position: absolute;
+  /* float: right; */
   display: inline-block;
   width: 20px;
   height: 11px;
+  margin-top: -6px;
   margin-left: auto;
   background: #fff url(./images/rank.png) no-repeat 100% 0;
   right: 0;
+  top: 50%;
 }
 
 .stop {
